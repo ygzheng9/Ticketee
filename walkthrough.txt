@@ -1,0 +1,18 @@
+rails new ticketee
+
+git config --global user.name "ygzheng9"
+git config --global user.email ygzheng9@gmail.com
+
+git add .
+git commit -m "Generate the Rails 4 application"
+
+git remote add origin git@github.com:ygzheng9/Ticketee.git
+git push origin master -u
+
+gem "rspec-rails", "~> 3.2.1"
+
+group :test do
+  gem "capybara", "~> 2.4"
+end
+
+rails g rspec:install
