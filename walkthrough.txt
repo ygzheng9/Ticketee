@@ -16,3 +16,5 @@ group :test do
 end
 
 rails g rspec:install
+
+how to call helper in console? e.g. pluralize?
